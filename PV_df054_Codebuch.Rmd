@@ -1,0 +1,95 @@
+---
+title: "Codebuch Testat"
+author: ""
+date: ""
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Github und Datensammlung 
+
+Die Dateien des Testats liegen in dem Github-Verzeichnis 
+
+#Edgelist
+
+*from*
+entspricht der id in der Nodelist und definiert den jeweiligen Knoten
+
+*to*
+entspricht den Knoten der Organisationen: Volleyball-Club in dem die Spielerin gespielt hat oder der Nationalität, der sie zugehörig ist 
+
+*connection*
+Verhältnis der Spielerinnen zur Organisation
+
+1 = hat im Volleyball-Club gespielt 
+2 = Beziehung zum Heimatland, bzw. hat die Nationalität
+
+#Nodelist
+
+*id*
+eindeutige Identifikation der Knoten 
+
+*name*
+Bezeichnung der Knoten wie sie später im Netzwerk angezeigt werden
+
+*type*
+Art des Knotens 
+
+0 = Spielerin 
+1 = Organisation (Verein und Land/Nationalität)
+
+*birth*
+Jahr, in dem die einzelnen Spielerinnen geboren 
+
+*age*
+Alter der Spielerinnen, zusammengefasst in Zahlen nach 
+
+0 = u 20 oder 20
+1 = 21 - 23
+2 = 24 - 26 
+3 = 27 - 30 
+4 = ü 30 
+
+*playerposition*
+Spielerposition auf dem Feld
+
+0 = Mittelblock
+1 = Zuspiel
+2 = Außenangriff 
+3 = Diagonal 
+4 = Libera 
+
+*nationality*
+Nationalität der Spielerin
+
+0 = Deutschland
+1 = Niederlande
+2 = USA
+3 = Polen
+4 = Finnland
+5 = Belgien
+6 = Spanien
+7 = Bulgarien
